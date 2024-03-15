@@ -8,4 +8,4 @@ type here: <input type="text" name="text" [(ngModel)]="title">
 <button type="button" (click)="addtitles()">submit!</button>
 <input type="checkbox" [(ngModel)]="isdisabled"> <!--while doing this we can able to know ondestroy called-->
 
-<app-header *ngIf="isdisabled" [text]="titles"></app-header>
+<app-header *ngIf="!isdisabled" [text]="titles"></app-header>
