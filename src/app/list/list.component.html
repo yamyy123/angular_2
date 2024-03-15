@@ -1,0 +1,14 @@
+<!--becsuse now list component is acting as a child we want to add the form component here -->
+<app-form (carAdded)="oncarsupdated($event)"></app-form>
+<h5>list component</h5>
+<div *ngIf="cars.length>0;then thenblock else elseblock"></div>
+<ng-template #thenblock>
+
+<ul>
+    <li *ngFor="let carname of cars">
+    {{carname}}</li>
+</ul>
+</ng-template>
+<ng-template #elseblock>
+    <p>no details are there</p>
+</ng-template>

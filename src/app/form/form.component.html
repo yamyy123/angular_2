@@ -1,0 +1,12 @@
+<h5>form component</h5>
+<form>
+    <label for="carname">carname:</label>
+    <input type="text" [(ngModel)]="carname" name="carname">
+    <button type="button" (click)="push()">click me!</button>
+</form>
+<br><br>
+<!--here we are making a form component to act as a parent for the child list component-->
+<!--in this now we want to give cars parameter to the list component so we will be using property binding method to display there-->
+<!--for that we want to input input package from angular core package-->
+<!--<app-list [carnames]="cars"></app-list>-->
+<!--we have given the cars here because from form component we are giving the cars list component there-->

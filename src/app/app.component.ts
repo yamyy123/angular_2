@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'vanakam';
+  titles:string[] =[];
+  addtitles(){
+    this.titles.push(this.title)
+  }
+  isdisabled:boolean= false;
 }
+
+
